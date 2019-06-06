@@ -12,7 +12,7 @@ const StateHooks = () => {
         color="primary"
         onClick={() => setCount(count + 1)}
       >
-        Test
+        Count
       </Button>
     </div>
   );
