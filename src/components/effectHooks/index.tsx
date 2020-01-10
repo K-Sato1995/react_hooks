@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
+import OnlineStatus from "./OnlineStatus";
 
 const EffectHooks = () => {
   const [value, setValue] = useState(0);
@@ -7,6 +8,7 @@ const EffectHooks = () => {
   useEffect(() => {
     console.log("render!");
     // If you want to implement componentWillUnmount, return a function from here,
+    // If your effect returns a function, React will run it when it is time to clean up.
     return () => console.log("unmounting..");
   });
 
@@ -19,6 +21,7 @@ const EffectHooks = () => {
   return (
     <div>
       <h2>Effect Hooks</h2>
+      <h3>UseEffect Example(1)</h3>
       <Button
         variant="contained"
         color="primary"
@@ -26,6 +29,8 @@ const EffectHooks = () => {
       >
         Change Value
       </Button>
+      <h3>UseEffect Example(2)</h3>
+      <OnlineStatus />
     </div>
   );
 };
