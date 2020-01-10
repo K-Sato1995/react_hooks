@@ -12,12 +12,9 @@ const EffectHooks = () => {
 
   // If one of the dependencies has changed since the last time, the effect will run again.
   // It will also still run after the initial render.
-  useEffect(
-    () => {
-      console.log("The value has been changed.");
-    },
-    [value]
-  );
+  useEffect(() => {
+    alert("Initial render or The value has been changed.");
+  }, [value]);
 
   return (
     <div>
