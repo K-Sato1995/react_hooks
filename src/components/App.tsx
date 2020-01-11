@@ -1,6 +1,7 @@
 import React from "react";
-import StateHooks from "./stateHooks/index";
-import EffectHooks from "./effectHooks/index";
+import StateHooks from "./stateHooks";
+import EffectHooks from "./effectHooks";
+import Rules from "./rules";
 
 const App: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const App: React.FC = () => {
       <h1>React Hooks</h1>
       <StateHooks />
       <EffectHooks />
+      <Rules />
     </div>
   );
 };
