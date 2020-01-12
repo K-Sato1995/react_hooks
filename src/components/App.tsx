@@ -2,6 +2,7 @@ import React from "react";
 import StateHooks from "./stateHooks";
 import EffectHooks from "./effectHooks";
 import Rules from "./rules";
+import CustomHooks from "./customHooks";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <StateHooks />
       <EffectHooks />
       <Rules />
+      <CustomHooks />
     </div>
   );
 };
