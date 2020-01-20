@@ -11,9 +11,9 @@ const App: React.FC = () => {
     <TextProvider>
       <div className="App">
         <h1>React Hooks</h1>
+        <Rules />
         <StateHooks />
         <EffectHooks />
-        <Rules />
         <CustomHooks />
         <UseContext />
       </div>
