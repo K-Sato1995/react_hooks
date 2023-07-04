@@ -4,6 +4,7 @@ import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 import TextProvider from "./components/contextHooks/TextProvider";
 
+console.log('hello world')
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
